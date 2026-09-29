@@ -21,3 +21,4 @@
  ✓ Compiled /icon.png in 423ms (431 modules)
  GET /icon.png?f8113231a073f666 200 in 1671ms
  GET / 200 in 234ms
+ GET / 200 in 96ms
