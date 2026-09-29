@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "directBooking": {
+      "enabled": false,
+      "title": "Book direct with us",
+      "benefit": "TODO_CLIENT_CONFIRM: owner's direct-booking benefit (best rate, early check-in, free pickup, etc.)"
+    }
+  },
+  "seasonalNotices": [
+    { "enabled": false, "title": "TODO: seasonal notice", "text": "e.g. Rath Yatra week fills fast, book early.", "cta": "Ask on WhatsApp" }
+  ]
+}

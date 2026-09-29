@@ -1,0 +1,6 @@
+{
+  "reviews": [],
+  "googleRating": null,
+  "googleReviewsUrl": "TODO_CLIENT_CONFIRM",
+  "note": "Add only REAL verified Google reviews here (nameInitial, city, stars, 1-2 lines). While this array is empty, the Guest Voices section is hidden site-wide. NEVER invent reviews."
+}

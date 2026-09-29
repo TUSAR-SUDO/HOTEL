@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="PLACEHOLDER: Nandankanan Zoological Park, replace with a real photo you own">
+  <defs>
+    <linearGradient id="skyg24" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFE3CC"/>
+      <stop offset="100%" stop-color="#D9C39A"/>
+    </linearGradient>
+    <linearGradient id="seag24" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A4436"/>
+      <stop offset="100%" stop-color="#2E2A1E"/>
+    </linearGradient>
+    <radialGradient id="glowg24" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FBE9C8" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#F3D9A4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F3D9A4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="graing24">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.6 0.6 0.6 0 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs><rect width="1200" height="800" fill="url(#skyg24)"/><circle cx="840" cy="176" r="179.2" fill="url(#glowg24)" opacity="0.9"/>
+<circle cx="840" cy="176" r="56" fill="#F6DFB2" opacity="0.9"/>
+    <path d="M 0 624 Q 300 320 600 624 Z" fill="#23503F" opacity="0.7"/>
+    <path d="M 480 624 Q 840 256 1200 624 Z" fill="#23503F" opacity="0.9"/>
+    <g stroke="#2A1B14" fill="none" stroke-linecap="round" opacity="0.85">
+  <path d="M 240 624 C 246.7 579.2, 234.4 545.6, 244.5 512" stroke-width="5.6"/>
+  <path d="M 244.5 512 Q 215.4 491.8, 181.8 512" stroke-width="3.9"/><path d="M 244.5 512 Q 220.9 491.8, 192.9 492.3" stroke-width="3.9"/><path d="M 244.5 512 Q 235.5 491.8, 222 480" stroke-width="3.9"/><path d="M 244.5 512 Q 253.5 491.8, 258 480" stroke-width="3.9"/><path d="M 244.5 512 Q 268 491.8, 287.1 492.3" stroke-width="3.9"/><path d="M 244.5 512 Q 273.6 491.8, 298.2 512" stroke-width="3.9"/>
+</g>
+    <g stroke="#2A1B14" stroke-width="4.8" fill="none" opacity="0.55" stroke-linecap="round">
+  <path d="M 440 144 Q 460 120 480 144 Q 500 120 520 144"/>
+  <path d="M 552 124 Q 568 106 584 124 Q 600 106 616 124"/>
+</g>
+  <g>
+    <circle cx="600" cy="352" r="60" fill="#2A1B14" opacity="0.92"/>
+    <circle cx="600" cy="352" r="60" fill="none" stroke="#B98A3B" stroke-width="3.6"/>
+    <text x="600" y="372.8" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="67.2" fill="#B98A3B" letter-spacing="-0.5">SR</text>
+    <text x="600" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="22.4" fill="#2A1B14" opacity="0.85" letter-spacing="2">PLACEHOLDER · REAL PHOTO COMING</text>
+  </g>
+</svg>

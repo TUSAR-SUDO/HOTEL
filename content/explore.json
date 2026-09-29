@@ -1,0 +1,52 @@
+{
+  "puri": {
+    "title": "Puri essentials",
+    "top5": [
+      { "name": "Jagannath Temple", "line": "One of India's four dhamas; non-Hindus may view from outside.", "imageId": "exp-jagannath" },
+      { "name": "Konark Sun Temple", "line": "13th-century stone chariot of the sun god.", "imageId": "exp-konark" },
+      { "name": "Puri Beach", "line": "Golden sands, surf, and famous sunrises.", "imageId": "exp-puri-beach" },
+      { "name": "Chilika Lake", "line": "Irrawaddy dolphins and winter migratory birds.", "imageId": "exp-chilika" },
+      { "name": "Raghurajpur", "line": "Heritage village of Pattachitra painters.", "imageId": "exp-raghurajpur" }
+    ],
+    "route1day": [
+      "Sunrise at Puri Beach",
+      "Jagannath Temple darshan",
+      "Breakfast: mahaprasad or local pakhala",
+      "Beach road and market stroll",
+      "Evening aarti at the temple"
+    ],
+    "route2day": [
+      "Day 1: Temple darshan, beach, Bada Danda walk",
+      "Day 2: Day trip to Konark (35 km) and Raghurajpur",
+      "Optional Day 3: Chilika Lake boat safari at Satapada"
+    ],
+    "bestSeason": "October to February",
+    "food": ["Dalma", "Pakhala bhata", "Chhena poda", "Mahaprasad", "Seafood at beach stalls"],
+    "gettingAround": ["Auto-rickshaws everywhere", "Cabs for Konark / Chilika day trips", "E-rickshaws for short hops"]
+  },
+  "bhubaneswar": {
+    "title": "Bhubaneswar essentials",
+    "top5": [
+      { "name": "Lingaraj Temple", "line": "The great 11th-century temple of the old town.", "imageId": "exp-lingaraj" },
+      { "name": "Udayagiri & Khandagiri", "line": "Jain caves carved into twin hills.", "imageId": "exp-caves" },
+      { "name": "Odisha State Museum", "line": "Manuscripts, armour, and tribal art.", "imageId": "exp-museum" },
+      { "name": "Dhauli Shanti Stupa", "line": "Peace pagoda overlooking the Daya river.", "imageId": "exp-dhauli" },
+      { "name": "Nandankanan", "line": "Zoo, botanical garden, and white tigers.", "imageId": "exp-nandankanan" }
+    ],
+    "route1day": [
+      "Lingaraj Temple and old town lanes",
+      "Odisha State Museum",
+      "Udayagiri caves",
+      "Ekamra Haat for handicrafts",
+      "Dhauli at sunset"
+    ],
+    "route2day": [
+      "Day 1: Old town temples, museum, Ekamra Haat",
+      "Day 2: Nandankanan, Khandagiri caves, malls",
+      "Optional Day 3: Dhauli and Pipili applique village"
+    ],
+    "bestSeason": "October to March",
+    "food": ["Dalma", "Pakhala bhata", "Chhena poda", "Chhena jhili", "Street-side chaat"],
+    "gettingAround": ["App-based cabs", "Auto-rickshaws", "BBSR city buses"]
+  }
+}

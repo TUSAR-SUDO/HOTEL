@@ -1,0 +1,118 @@
+{
+  "properties": [
+    {
+      "key": "puri",
+      "name": "Hotel Shree Ram",
+      "shortName": "Hotel Shree Ram",
+      "brandSuffix": "Puri",
+      "city": "Puri",
+      "tagline": "A peaceful stay in the heart of Puri",
+      "oneLiner": "Comfortable rooms, close to the sea and the temple.",
+      "address": "Market Square, Narendrakona Road, Puri-1, Odisha",
+      "phonePrimary": "919337592943",
+      "phoneSecondary": "919439331073",
+      "whatsapp": "919337592943",
+      "email": "ramdewsoft@gmail.com",
+      "geo": { "lat": null, "lng": null },
+      "mapsQuery": "Hotel Shree Ram, Narendrakona Road, Puri, Odisha",
+      "heroImageId": "puri-hero",
+      "theme": "coastal",
+      "priceNote": "TODO_CLIENT_CONFIRM",
+      "festivalBanner": {
+        "enabled": false,
+        "title": "Rath Yatra: book early",
+        "text": "Festival dates are set each year by the temple trust. Contact us early to lock your room.",
+        "cta": "Ask about festival dates"
+      },
+      "distanceChips": [
+        { "label": "Jagannath Temple", "value": "TODO: verify on Maps" },
+        { "label": "Puri Beach", "value": "TODO: verify on Maps" },
+        { "label": "Puri Railway Station", "value": "TODO: verify on Maps" },
+        { "label": "Bhubaneswar Airport", "value": "~80-90 min drive" }
+      ],
+      "nearby": [
+        { "name": "Jagannath Temple", "line": "TODO: distance. The heart of Puri's spiritual life.", "imageId": "nearby-jagannath" },
+        { "name": "Puri Beach", "line": "TODO: distance. Sunrise walks on golden sand.", "imageId": "nearby-puri-beach" },
+        { "name": "Konark Sun Temple", "line": "TODO: distance. UNESCO-listed 13th-century chariot temple.", "imageId": "nearby-konark" },
+        { "name": "Chilika Lake", "line": "TODO: distance. Asia's largest brackish-water lagoon.", "imageId": "nearby-chilika" },
+        { "name": "Raghurajpur", "line": "TODO: distance. Heritage craft village of Pattachitra artists.", "imageId": "nearby-raghurajpur" },
+        { "name": "Sudarshan Crafts Museum", "line": "TODO: distance. Wood and stone craft by Sudarshan Sahoo.", "imageId": "nearby-sudarshan" }
+      ],
+      "localTips": {
+        "title": "Local tips",
+        "bullets": [
+          "Best time to visit: October to February.",
+          "TODO_CLIENT_CONFIRM: darshan queue guidance.",
+          "TODO_CLIENT_CONFIRM: early check-in after night trains, subject to availability."
+        ]
+      },
+      "amenities": [
+        { "id": "wifi", "label": "Free Wi-Fi" },
+        { "id": "ac", "label": "AC rooms" },
+        { "id": "hot-water", "label": "Hot water" },
+        { "id": "tv", "label": "TV" },
+        { "id": "parking", "label": "Parking" },
+        { "id": "lift", "label": "Lift" },
+        { "id": "desk-24", "label": "24-hour desk" },
+        { "id": "luggage", "label": "Luggage storage" },
+        { "id": "laundry", "label": "Laundry" },
+        { "id": "power-backup", "label": "Power backup" },
+        { "id": "cctv", "label": "CCTV" }
+      ],
+      "amenitiesNote": "CLIENT TO CONFIRM: show only amenities that actually exist; remove the rest from this list."
+    },
+    {
+      "key": "bhubaneswar",
+      "name": "Shree Ram Lodge",
+      "shortName": "Shree Ram Lodge",
+      "brandSuffix": "Bhubaneswar",
+      "city": "Bhubaneswar",
+      "tagline": "Comfortable, connected, close to the city",
+      "oneLiner": "A calm, practical stay with easy parking and honest rates.",
+      "address": "Samantarapur, Bhubaneswar-2, Odisha",
+      "phonePrimary": "919938205167",
+      "phoneSecondary": "919938215167",
+      "whatsapp": "919938205167",
+      "email": "ramdewsoft@gmail.com",
+      "geo": { "lat": null, "lng": null },
+      "mapsQuery": "Shree Ram Lodge, Samantarapur, Bhubaneswar, Odisha",
+      "heroImageId": "bbsr-hero",
+      "theme": "practical",
+      "priceNote": "TODO_CLIENT_CONFIRM",
+      "festivalBanner": { "enabled": false, "title": "", "text": "", "cta": "" },
+      "distanceChips": [
+        { "label": "Bhubaneswar Railway Station", "value": "TODO: verify on Maps" },
+        { "label": "Biju Patnaik Airport", "value": "TODO: verify on Maps" },
+        { "label": "Lingaraj Temple", "value": "TODO: verify on Maps" },
+        { "label": "Old Town", "value": "TODO: verify on Maps" }
+      ],
+      "nearby": [
+        { "name": "Lingaraj Temple", "line": "TODO: drive time. The great old-town temple.", "imageId": "nearby-lingaraj" },
+        { "name": "Udayagiri & Khandagiri Caves", "line": "TODO: drive time. Jain caves carved into twin hills.", "imageId": "nearby-udayagiri" },
+        { "name": "Odisha State Museum", "line": "TODO: drive time. Manuscripts, arms, and tribal art.", "imageId": "nearby-museum" },
+        { "name": "Dhauli Shanti Stupa", "line": "TODO: drive time. The peace pagoda on the Daya banks.", "imageId": "nearby-dhauli" },
+        { "name": "Nandankanan Zoo", "line": "TODO: drive time. Zoological park and botanical garden.", "imageId": "nearby-nandankanan" }
+      ],
+      "localTips": {
+        "title": "Good to know",
+        "bullets": [
+          "Winter (Oct-Mar) is the best season for temple visits.",
+          "TODO_CLIENT_CONFIRM: weekly and monthly long-stay rates.",
+          "TODO_CLIENT_CONFIRM: GST invoice available on request."
+        ]
+      },
+      "amenities": [
+        { "id": "wifi", "label": "Free Wi-Fi" },
+        { "id": "ac", "label": "AC rooms" },
+        { "id": "hot-water", "label": "Hot water" },
+        { "id": "tv", "label": "TV" },
+        { "id": "parking", "label": "Easy parking" },
+        { "id": "desk-24", "label": "24-hour desk" },
+        { "id": "laundry", "label": "Laundry" },
+        { "id": "power-backup", "label": "Power backup" },
+        { "id": "cctv", "label": "CCTV" }
+      ],
+      "amenitiesNote": "CLIENT TO CONFIRM: show only amenities that actually exist; remove the rest from this list."
+    }
+  ]
+}

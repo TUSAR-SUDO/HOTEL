@@ -1,0 +1,15 @@
+
+> shree-ram-website@1.0.0 predev
+> node scripts/generate-content.js && node scripts/generate-placeholders.js
+
+✓ Content validated and .content/generated.ts written.
+✓ Wrote 25 themed placeholder artworks to /public/media.
+
+> shree-ram-website@1.0.0 dev
+> next dev -p 3000
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.9s

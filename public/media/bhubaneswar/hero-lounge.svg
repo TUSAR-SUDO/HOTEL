@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="PLACEHOLDER: Shree Ram Lodge lounge, replace with real photo">
+  <defs>
+    <linearGradient id="skyg13" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFE3CC"/>
+      <stop offset="100%" stop-color="#D9C39A"/>
+    </linearGradient>
+    <linearGradient id="seag13" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A4436"/>
+      <stop offset="100%" stop-color="#2E2A1E"/>
+    </linearGradient>
+    <radialGradient id="glowg13" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FBE9C8" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#F3D9A4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F3D9A4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="graing13">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.6 0.6 0.6 0 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#EFE2C8"/>
+  <rect y="800" width="1600" height="200" fill="#C8A876"/>
+  <circle cx="800" cy="160" r="256" fill="url(#glowg13)" opacity="0.5"/>
+<circle cx="800" cy="160" r="80" fill="#F6DFB2" opacity="0.5"/>
+  <g>
+    <path d="M 256 800 L 480 300 L 1120 300 L 1344 800 Z" fill="#7B1E2B" opacity="0.85"/>
+    <rect x="594" y="360" width="28" height="380" fill="#2A1B14" opacity="0.25"/><rect x="786" y="360" width="28" height="380" fill="#2A1B14" opacity="0.25"/><rect x="978" y="360" width="28" height="380" fill="#2A1B14" opacity="0.25"/>
+    <rect x="672" y="240" width="256" height="60" rx="30" fill="#B98A3B"/>
+  </g>
+  
+  <g>
+    <text x="800" y="950" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#FBF6EC" opacity="0.75" letter-spacing="3">PLACEHOLDER · REAL PHOTO COMING</text>
+  </g>
+</svg>

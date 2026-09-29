@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "q": "What are the check-in and check-out times?",
+      "a": "TODO_CLIENT_CONFIRM: e.g. Check-in from 12 pm, check-out by 11 am."
+    },
+    {
+      "q": "What ID do I need to check in?",
+      "a": "TODO_CLIENT_CONFIRM: e.g. Aadhaar, passport or driving licence for all adults."
+    },
+    {
+      "q": "Is parking available?",
+      "a": "TODO_CLIENT_CONFIRM: e.g. Free parking on site, first come first served."
+    },
+    {
+      "q": "Can I cancel or change my booking?",
+      "a": "TODO_CLIENT_CONFIRM: e.g. Free cancellation until 24 hours before check-in."
+    },
+    {
+      "q": "How do I pay? Can I pay at the hotel?",
+      "a": "TODO_CLIENT_CONFIRM: e.g. Cash, UPI and cards accepted; pay on arrival."
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teak-espresso: #2a1b14;
+  --antique-gold: #b98a3b;
+  --deep-gold: #7e5a14;
+  --ivory: #fbf6ec;
+  --khadi-sand: #f0e6d2;
+  --pattachitra-maroon: #7b1e2b;
+  --bottle-green: #23503f;
+  --sage-mist: #e3eae0;
+  --warm-umber: #5a4e46;
+  --whatsapp: #25d366;
+  --marigold: #E2A72E;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(42, 27, 20, 0.12);
+  --font-head: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Mukta", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-oriya: "Noto Sans Oriya", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: var(--ivory);
+  color: var(--warm-umber);
+  font-family: var(--font-body);
+  font-size: 16.5px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  color: var(--teak-espresso);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+/* Visible focus states everywhere */
+:focus-visible {
+  outline: 2px solid var(--antique-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Gentle motion only; respect user preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* No horizontal scroll on any screen */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Hide scrollbars for a cleaner look — scrolling itself still works
+   (wheel, touch, keyboard). Coverage: WebKit/Blink pseudo-element, Firefox
+   scrollbar-width, and a #scroll-root wrapper that carries the page scroll
+   (hidden overflow) so even stubborn engines show no bar. */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+#scroll-root {
+  height: 100vh;
+  height: 100dvh; /* mobile dynamic toolbars */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#scroll-root::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---- Motion & layout primitives (Odisha redesign) ---- */
+
+/* Slow hero zoom (image/video scale-in) */
+@keyframes hero-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+.hero-zoom {
+  animation: hero-zoom 18s ease-out forwards;
+}
+
+/* Arch mask image reveal on scroll */
+.arch-reveal {
+  clip-path: inset(12% 8% 12% 8% round 999px 999px 0 0);
+  transition: clip-path 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.arch-reveal.is-visible {
+  clip-path: inset(0 0 0 0 round 999px 999px 0 0);
+}
+
+/* Horizontal scroll-snap rooms row */
+.snap-row {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.75rem;
+  scrollbar-width: none;
+}
+.snap-row::-webkit-scrollbar {
+  display: none;
+}
+.snap-row > * {
+  scroll-snap-align: start;
+  flex: 0 0 min(82vw, 380px);
+}
+
+/* Marquee of place names */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 36s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .hero-zoom {
+    animation: none;
+  }
+  .arch-reveal {
+    clip-path: none;
+    transition: none;
+  }
+}
