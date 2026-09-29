@@ -64,16 +64,16 @@ export default function HomePage() {
               "linear-gradient(180deg, rgba(42,27,20,0.15) 0%, rgba(42,27,20,0.42) 55%, rgba(42,27,20,0.82) 100%)",
           }}
         />
-        {/* giant Odia wordmark, ghosted behind the headline */}
+        {/* giant Odia wordmark, ghosted behind the headline (desktop only) */}
         <OdiaWordmark
-          className="pointer-events-none absolute right-[4%] top-[10%] text-[22vw] text-ivory/12 sm:text-[16vw]"
+          className="pointer-events-none absolute right-[4%] top-[10%] hidden text-[16vw] text-ivory/12 sm:block"
         />
-        <div className="absolute inset-0 flex items-end [text-shadow:0_1px_16px_rgba(42,27,20,0.55)]">
+        <div className="absolute inset-0 flex items-end [text-shadow:0_1px_10px_rgba(42,27,20,0.85),0_0_3px_rgba(42,27,20,0.5)]">
           <div className="mx-auto w-full max-w-6xl px-4 pb-12 sm:pb-16">
             <p className="mb-4 text-[15px] font-medium tracking-wide text-marigold">
               Namaskar · <span lang="or" className="font-oriya">ସ୍ବାଗତ</span>
             </p>
-            <h1 className="max-w-3xl font-heading text-[44px] font-semibold leading-[1.02] tracking-tight text-ivory sm:text-7xl md:text-[88px]">
+            <h1 className="max-w-3xl font-heading text-[40px] font-semibold leading-[1.04] tracking-tight text-ivory sm:text-6xl md:text-[84px]">
               Stay with <em className="italic text-marigold">family</em> in Puri &amp; Bhubaneswar.
             </h1>
             <p className="mt-5 max-w-xl text-lg text-ivory/90 sm:text-[21px]">

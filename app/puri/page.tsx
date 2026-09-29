@@ -48,8 +48,8 @@ export default function PuriPage() {
               "linear-gradient(180deg, rgba(42,27,20,0.15) 0%, rgba(42,27,20,0.42) 55%, rgba(42,27,20,0.82) 100%)",
           }}
         />
-        <OdiaWordmark className="pointer-events-none absolute right-[4%] top-[8%] text-[20vw] text-ivory/12 sm:text-[14vw]" />
-        <div className="absolute inset-0 flex items-end [text-shadow:0_1px_16px_rgba(42,27,20,0.55)]">
+        <OdiaWordmark className="pointer-events-none absolute right-[4%] top-[8%] hidden text-[14vw] text-ivory/12 sm:block" />
+        <div className="absolute inset-0 flex items-end [text-shadow:0_1px_10px_rgba(42,27,20,0.85),0_0_3px_rgba(42,27,20,0.5)]">
           <div className="mx-auto w-full max-w-6xl px-4 pb-12 sm:pb-14">
             <p className="mb-3 text-[15px] font-medium tracking-wide text-marigold">
               Hotel Shree Ram · <span lang="or" className="font-oriya">ପୁରୀ</span>

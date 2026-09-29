@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 import type { MediaItem } from "@/lib/types";
@@ -16,6 +16,8 @@ const isVectorArt = (i: MediaItem) => (displaySrc(i) || "").endsWith(".svg");
 export default function GalleryClient({ items }: { items: MediaItem[] }) {
   const [filter, setFilter] = useState<Filter>("All");
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [bubble, setBubble] = useState({ x: 0, y: 0, on: false });
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const visible = useMemo(
     () => (filter === "All" ? items : items.filter((i) => i.category === filter)),
@@ -39,6 +41,17 @@ export default function GalleryClient({ items }: { items: MediaItem[] }) {
     };
   }, [lightbox, visible.length]);
 
+  // "View" cursor bubble follows the pointer over tiles (mouse only).
+  function onTileEnter() {
+    setBubble((b) => ({ ...b, on: true }));
+  }
+  function onTileLeave() {
+    setBubble((b) => ({ ...b, on: false }));
+  }
+  function onTileMove(e: React.MouseEvent) {
+    setBubble({ x: e.clientX, y: e.clientY, on: true });
+  }
+
   return (
     <div>
       {/* Filters */}
@@ -52,7 +65,7 @@ export default function GalleryClient({ items }: { items: MediaItem[] }) {
               type="button"
               onClick={() => setFilter(f)}
               aria-pressed={filter === f}
-              className={`min-h-[40px] rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+              className={`min-h-[44px] rounded-full border px-5 py-2 text-[15px] font-medium transition-colors ${
                 filter === f
                   ? "border-maroon bg-maroon text-ivory"
                   : "border-antique-gold/40 bg-ivory text-espresso hover:border-deep-gold"
@@ -66,17 +79,20 @@ export default function GalleryClient({ items }: { items: MediaItem[] }) {
 
       {/* Grid */}
       {visible.length === 0 ? (
-        <p className="py-16 text-center text-sm text-warm-umber">
+        <p className="py-16 text-center text-[17px] text-warm-umber">
           Nothing in this category yet — photos arrive after the shoot.
         </p>
       ) : (
-        <div className="columns-2 gap-4 sm:columns-3 lg:columns-4 [&>*]:mb-4">
+        <div ref={gridRef} className="columns-2 gap-4 sm:columns-3 lg:columns-4 [&>*]:mb-4">
           {visible.map((item, idx) => (
             <button
               key={item.id}
               type="button"
               onClick={() => setLightbox(idx)}
-              className="group relative block w-full overflow-hidden rounded-[14px] bg-khadi-sand shadow-soft"
+              onMouseEnter={onTileEnter}
+              onMouseLeave={onTileLeave}
+              onMouseMove={onTileMove}
+              className="group relative block w-full overflow-hidden rounded-[14px] bg-khadi-sand shadow-soft transition-transform duration-300 hover:-translate-y-1"
               aria-label={`Open ${item.alt}`}
             >
               {isVectorArt(item) ? (
@@ -119,6 +135,15 @@ export default function GalleryClient({ items }: { items: MediaItem[] }) {
           ))}
         </div>
       )}
+
+      {/* View cursor bubble (desktop pointer only) */}
+      <span
+        aria-hidden="true"
+        className={`view-bubble ${bubble.on ? "is-on" : ""}`}
+        style={{ left: bubble.x, top: bubble.y }}
+      >
+        View
+      </span>
 
       {/* Lightbox */}
       {lightbox !== null && visible[lightbox] && (

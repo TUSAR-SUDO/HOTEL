@@ -124,8 +124,10 @@ body {
   gap: 1.25rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 1rem;
   padding-bottom: 0.75rem;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch; /* momentum on iOS */
 }
 .snap-row::-webkit-scrollbar {
   display: none;
@@ -133,6 +135,27 @@ body {
 .snap-row > * {
   scroll-snap-align: start;
   flex: 0 0 min(82vw, 380px);
+}
+
+/* ---- Mobile refinement (≤480px) ---- */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  .marquee-track {
+    animation-duration: 22s;
+  }
+  /* keep floating WhatsApp clear of iOS home indicator */
+  .wa-float {
+    bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}
+
+/* Comfortable tap targets everywhere on touch devices */
+@media (pointer: coarse) {
+  a, button, summary, select, input, textarea {
+    touch-action: manipulation;
+  }
 }
 
 /* Marquee of place names */
@@ -160,4 +183,78 @@ body {
     clip-path: none;
     transition: none;
   }
+  .wa-glow,
+  .wa-float {
+    animation: none !important;
+  }
+  .reveal-group > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---- WhatsApp floating button: glow rings ---- */
+@keyframes wa-ring {
+  0% { transform: scale(1); opacity: 0.55; }
+  70% { transform: scale(1.55); opacity: 0; }
+  100% { transform: scale(1.55); opacity: 0; }
+}
+.wa-glow {
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.55) 0%, rgba(37, 211, 102, 0) 70%);
+  animation: wa-ring 2.6s ease-out 3;
+  pointer-events: none;
+}
+.wa-float {
+  animation: wa-breathe 3.2s ease-in-out 3;
+}
+@keyframes wa-breathe {
+  0%, 100% { box-shadow: 0 6px 24px rgba(42, 27, 20, 0.35), 0 0 0 0 rgba(37, 211, 102, 0.45); }
+  50% { box-shadow: 0 6px 24px rgba(42, 27, 20, 0.35), 0 0 0 16px rgba(37, 211, 102, 0); }
+}
+
+/* ---- Award-style scroll reveal (staggered) ---- */
+.reveal-group > * {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--reveal-i, 0) * 90ms);
+}
+.reveal-group.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header shrink on scroll */
+.site-header {
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+.site-header.is-scrolled {
+  box-shadow: 0 8px 30px rgba(42, 27, 20, 0.28);
+}
+
+/* Gallery 'View' cursor bubble */
+.view-bubble {
+  position: fixed;
+  z-index: 60;
+  pointer-events: none;
+  width: 72px;
+  height: 72px;
+  margin: -36px 0 0 -36px;
+  border-radius: 9999px;
+  background: rgba(226, 167, 46, 0.95);
+  color: #2A1B14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Fraunces, Georgia, serif;
+  font-style: italic;
+  font-size: 17px;
+  transform: scale(0);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), left 0.15s ease-out, top 0.15s ease-out;
+}
+.view-bubble.is-on {
+  transform: scale(1);
+}
+@media (hover: none) {
+  .view-bubble { display: none; }
 }

@@ -47,7 +47,7 @@ export default function BhubaneswarPage() {
           }}
         />
         <div className="absolute inset-0 flex items-end">
-          <div className="mx-auto w-full max-w-6xl px-4 pb-10 sm:pb-14 [text-shadow:0_1px_14px_rgba(42,27,20,0.6)]">
+          <div className="mx-auto w-full max-w-6xl px-4 pb-10 sm:pb-14 [text-shadow:0_1px_10px_rgba(42,27,20,0.85),0_0_3px_rgba(42,27,20,0.5)]">
             <p className="mb-2 text-[15px] font-medium text-antique-gold">
               Shree Ram Lodge · <span lang="or">ଶ୍ରୀ ରାମ ଲଜ୍</span>
             </p>

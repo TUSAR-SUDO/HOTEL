@@ -12,21 +12,12 @@
   - Local:        http://localhost:3000
 
  ✓ Starting...
- ✓ Ready in 2.9s
+ ✓ Ready in 2.4s
  ○ Compiling / ...
- ✓ Compiled / in 5s (714 modules)
- GET / 200 in 5368ms
- GET / 200 in 93ms
- GET / 200 in 193ms
- ✓ Compiled /icon.png in 427ms (430 modules)
- GET /icon.png?5665f44759413361 200 in 1616ms
- GET / 200 in 207ms
- ○ Compiling /puri ...
- ✓ Compiled /puri in 690ms (732 modules)
- GET /puri 200 in 1783ms
- ✓ Compiled in 576ms (732 modules)
- GET / 200 in 269ms
- ✓ Compiled /icon.png in 130ms (448 modules)
- GET /icon.png?a3ff780f73542fd4 200 in 1381ms
- GET / 200 in 227ms
- GET / 200 in 93ms
+ ✓ Compiled / in 2.5s (702 modules)
+ GET / 200 in 3321ms
+ GET / 200 in 89ms
+ GET / 200 in 141ms
+ ✓ Compiled /icon.png in 423ms (431 modules)
+ GET /icon.png?f8113231a073f666 200 in 1671ms
+ GET / 200 in 234ms
