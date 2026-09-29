@@ -69,6 +69,7 @@ export default function PlaceholderMedia({
           quality={quality}
           priority={eager}
           loading={eager ? undefined : "lazy"}
+          fetchPriority={eager ? "high" : undefined}
           className="h-full w-full object-cover"
         />
       )}

@@ -3,7 +3,7 @@
 > node scripts/generate-content.js && node scripts/generate-placeholders.js
 
 ✓ Content validated and .content/generated.ts written.
-✓ Wrote 25 themed placeholder artworks to /public/media.
+✓ Wrote 0 themed placeholder artworks to /public/media.
 
 > shree-ram-website@1.0.0 dev
 > next dev -p 3000
@@ -12,13 +12,16 @@
   - Local:        http://localhost:3000
 
  ✓ Starting...
- ✓ Ready in 2.4s
+ ✓ Ready in 2.5s
  ○ Compiling / ...
- ✓ Compiled / in 2.5s (702 modules)
- GET / 200 in 3321ms
- GET / 200 in 89ms
- GET / 200 in 141ms
- ✓ Compiled /icon.png in 423ms (431 modules)
- GET /icon.png?f8113231a073f666 200 in 1671ms
- GET / 200 in 234ms
- GET / 200 in 96ms
+ ✓ Compiled / in 1613ms (702 modules)
+ GET / 200 in 2662ms
+ GET / 200 in 99ms
+ GET / 200 in 108ms
+ ✓ Compiled /icon.png in 358ms (431 modules)
+ GET /icon.png?f8113231a073f666 200 in 1564ms
+ ○ Compiling /puri ...
+ ✓ Compiled /puri in 615ms (752 modules)
+ GET /puri 200 in 871ms
+ GET /puri 200 in 108ms
+ ✓ Compiled in 412ms (720 modules)

@@ -128,9 +128,11 @@ export default function GalleryClient({ items }: { items: MediaItem[] }) {
               <span className="absolute bottom-2 left-2 rounded-full bg-espresso/80 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-antique-gold">
                 {item.property === "puri" ? "Puri" : "Bhubaneswar"}
               </span>
-              <span className="absolute right-2 top-2 rounded-full bg-espresso/85 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-antique-gold">
-                Placeholder
-              </span>
+              {isVectorArt(item) && (
+                <span className="absolute right-2 top-2 rounded-full bg-espresso/85 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-antique-gold">
+                  Placeholder
+                </span>
+              )}
             </button>
           ))}
         </div>

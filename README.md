@@ -55,11 +55,16 @@ Drop real files into `public/media/puri/` and `public/media/bhubaneswar/`, then 
 when `src` no longer ends in `.svg`. For the hero video, set `type: "video"`, `src`,
 and a `poster`.
 
+**Photos already in place (Bhubaneswar):** real photos of Shree Ram Lodge
+(`real-1.jpg` … `real-6.jpg`: rooms, reception, night frontage, entrance, corridor)
+were taken from the property's Justdial listing and are wired into
+`content/media.manifest.json`. Replace them any time with higher-quality shoot photos by
+editing the same manifest entries. Puri still uses themed placeholder artwork.
+
 **Logo:** the master file is `SR LOGO.png` in the project root. Web-ready copies
 (`public/sr-logo-192.png`, `public/sr-logo-512.png`, `app/icon.png`, `app/apple-icon.png`)
-are resized from it with `powershell` System.Drawing. NOTE: the master file is exported
-mirrored — the generation script applies `RotateNoneFlipX` so the monogram reads "SR"
-correctly. If the owner supplies a correctly-oriented master, remove the mirror flag.
+are resized from it with `powershell` System.Drawing. If the master's orientation ever
+looks mirrored in the UI, regenerate with a `RotateNoneFlipX` pass (see git history).
 Raster photos (jpg/webp/png) are optimized automatically by `next/image`; vector artwork
 stays as SVG for full-resolution rendering.
 

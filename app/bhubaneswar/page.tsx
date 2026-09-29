@@ -58,7 +58,7 @@ export default function BhubaneswarPage() {
               Samantarapur, Bhubaneswar-2 — calm, practical, well connected.
             </p>
             <div className="mt-6">
-              <DistanceChips chips={property.distanceChips} />
+              <DistanceChips chips={property.distanceChips.filter((c) => !/TODO/i.test(c.value))} />
             </div>
           </div>
         </div>

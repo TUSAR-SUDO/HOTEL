@@ -31,12 +31,12 @@
         { "label": "Bhubaneswar Airport", "value": "~80-90 min drive" }
       ],
       "nearby": [
-        { "name": "Jagannath Temple", "line": "TODO: distance. The heart of Puri's spiritual life.", "imageId": "nearby-jagannath" },
-        { "name": "Puri Beach", "line": "TODO: distance. Sunrise walks on golden sand.", "imageId": "nearby-puri-beach" },
-        { "name": "Konark Sun Temple", "line": "TODO: distance. UNESCO-listed 13th-century chariot temple.", "imageId": "nearby-konark" },
-        { "name": "Chilika Lake", "line": "TODO: distance. Asia's largest brackish-water lagoon.", "imageId": "nearby-chilika" },
-        { "name": "Raghurajpur", "line": "TODO: distance. Heritage craft village of Pattachitra artists.", "imageId": "nearby-raghurajpur" },
-        { "name": "Sudarshan Crafts Museum", "line": "TODO: distance. Wood and stone craft by Sudarshan Sahoo.", "imageId": "nearby-sudarshan" }
+        { "name": "Jagannath Temple", "line": "The heart of Puri's spiritual life.", "imageId": "nearby-jagannath" },
+        { "name": "Puri Beach", "line": "Sunrise walks on golden sand.", "imageId": "nearby-puri-beach" },
+        { "name": "Konark Sun Temple", "line": "UNESCO-listed 13th-century chariot temple.", "imageId": "nearby-konark" },
+        { "name": "Chilika Lake", "line": "Asia's largest brackish-water lagoon.", "imageId": "nearby-chilika" },
+        { "name": "Raghurajpur", "line": "Heritage craft village of Pattachitra artists.", "imageId": "nearby-raghurajpur" },
+        { "name": "Sudarshan Crafts Museum", "line": "Wood and stone craft by Sudarshan Sahoo.", "imageId": "nearby-sudarshan" }
       ],
       "localTips": {
         "title": "Local tips",
@@ -87,11 +87,11 @@
         { "label": "Old Town", "value": "TODO: verify on Maps" }
       ],
       "nearby": [
-        { "name": "Lingaraj Temple", "line": "TODO: drive time. The great old-town temple.", "imageId": "nearby-lingaraj" },
-        { "name": "Udayagiri & Khandagiri Caves", "line": "TODO: drive time. Jain caves carved into twin hills.", "imageId": "nearby-udayagiri" },
-        { "name": "Odisha State Museum", "line": "TODO: drive time. Manuscripts, arms, and tribal art.", "imageId": "nearby-museum" },
-        { "name": "Dhauli Shanti Stupa", "line": "TODO: drive time. The peace pagoda on the Daya banks.", "imageId": "nearby-dhauli" },
-        { "name": "Nandankanan Zoo", "line": "TODO: drive time. Zoological park and botanical garden.", "imageId": "nearby-nandankanan" }
+        { "name": "Lingaraj Temple", "line": "The great old-town temple of Bhubaneswar.", "imageId": "nearby-lingaraj" },
+        { "name": "Udayagiri & Khandagiri Caves", "line": "Jain caves carved into twin hills.", "imageId": "nearby-udayagiri" },
+        { "name": "Odisha State Museum", "line": "Manuscripts, arms, and tribal art.", "imageId": "nearby-museum" },
+        { "name": "Dhauli Shanti Stupa", "line": "The peace pagoda on the Daya banks.", "imageId": "nearby-dhauli" },
+        { "name": "Nandankanan Zoo", "line": "Zoological park and botanical garden.", "imageId": "nearby-nandankanan" }
       ],
       "localTips": {
         "title": "Good to know",
