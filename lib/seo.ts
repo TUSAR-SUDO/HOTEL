@@ -25,6 +25,5 @@ export function propertyJsonLd(p: Property) {
       ? { geo: { "@type": "GeoCoordinates", latitude: p.geo.lat, longitude: p.geo.lng } }
       : {}),
     ...(hero ? { image: hero.src } : {}),
-    priceRange: "TODO_CLIENT_CONFIRM",
   };
 }

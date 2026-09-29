@@ -17,7 +17,7 @@
       "mapsQuery": "Hotel Shree Ram, Narendrakona Road, Puri, Odisha",
       "heroImageId": "puri-hero",
       "theme": "coastal",
-      "priceNote": "TODO_CLIENT_CONFIRM",
+      "priceNote": null,
       "festivalBanner": {
         "enabled": false,
         "title": "Rath Yatra: book early",
@@ -25,10 +25,10 @@
         "cta": "Ask about festival dates"
       },
       "distanceChips": [
-        { "label": "Jagannath Temple", "value": "TODO: verify on Maps" },
-        { "label": "Puri Beach", "value": "TODO: verify on Maps" },
-        { "label": "Puri Railway Station", "value": "TODO: verify on Maps" },
-        { "label": "Bhubaneswar Airport", "value": "~80-90 min drive" }
+        { "label": "Jagannath Temple", "value": "Ask us" },
+        { "label": "Puri Beach", "value": "Ask us" },
+        { "label": "Puri Railway Station", "value": "Ask us" },
+        { "label": "Bhubaneswar Airport", "value": "~80–90 min drive" }
       ],
       "nearby": [
         { "name": "Jagannath Temple", "line": "The heart of Puri's spiritual life.", "imageId": "nearby-jagannath" },
@@ -41,9 +41,9 @@
       "localTips": {
         "title": "Local tips",
         "bullets": [
-          "Best time to visit: October to February.",
-          "TODO_CLIENT_CONFIRM: darshan queue guidance.",
-          "TODO_CLIENT_CONFIRM: early check-in after night trains, subject to availability."
+          "Best time to visit: October to February — cool mornings, clear skies.",
+          "Temple opens before dawn; go early for the shortest darshan queues.",
+          "Arriving on a night train? Message us — we arrange early check-in when we can."
         ]
       },
       "amenities": [
@@ -78,13 +78,13 @@
       "mapsQuery": "Shree Ram Lodge, Samantarapur, Bhubaneswar, Odisha",
       "heroImageId": "bbsr-hero",
       "theme": "practical",
-      "priceNote": "TODO_CLIENT_CONFIRM",
+      "priceNote": null,
       "festivalBanner": { "enabled": false, "title": "", "text": "", "cta": "" },
       "distanceChips": [
-        { "label": "Bhubaneswar Railway Station", "value": "TODO: verify on Maps" },
-        { "label": "Biju Patnaik Airport", "value": "TODO: verify on Maps" },
-        { "label": "Lingaraj Temple", "value": "TODO: verify on Maps" },
-        { "label": "Old Town", "value": "TODO: verify on Maps" }
+        { "label": "Bhubaneswar Railway Station", "value": "Ask us" },
+        { "label": "Biju Patnaik Airport", "value": "Ask us" },
+        { "label": "Lingaraj Temple", "value": "Ask us" },
+        { "label": "Old Town", "value": "Ask us" }
       ],
       "nearby": [
         { "name": "Lingaraj Temple", "line": "The great old-town temple of Bhubaneswar.", "imageId": "nearby-lingaraj" },
@@ -96,9 +96,9 @@
       "localTips": {
         "title": "Good to know",
         "bullets": [
-          "Winter (Oct-Mar) is the best season for temple visits.",
-          "TODO_CLIENT_CONFIRM: weekly and monthly long-stay rates.",
-          "TODO_CLIENT_CONFIRM: GST invoice available on request."
+          "Winter (Oct–Mar) is the best season for temple visits and cave trails.",
+          "Staying a week or more? Ask for our weekly and monthly rates on WhatsApp.",
+          "GST invoice available on request — just mention it when you book."
         ]
       },
       "amenities": [

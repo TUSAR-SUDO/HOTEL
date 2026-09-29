@@ -14,14 +14,30 @@
  ✓ Starting...
  ✓ Ready in 2.5s
  ○ Compiling / ...
- ✓ Compiled / in 1613ms (702 modules)
- GET / 200 in 2662ms
- GET / 200 in 99ms
- GET / 200 in 108ms
- ✓ Compiled /icon.png in 358ms (431 modules)
- GET /icon.png?f8113231a073f666 200 in 1564ms
- ○ Compiling /puri ...
- ✓ Compiled /puri in 615ms (752 modules)
- GET /puri 200 in 871ms
- GET /puri 200 in 108ms
- ✓ Compiled in 412ms (720 modules)
+ ✓ Compiled / in 2.8s (702 modules)
+ GET / 200 in 3601ms
+ GET / 200 in 96ms
+ GET / 200 in 195ms
+ ✓ Compiled /icon.png in 477ms (431 modules)
+ GET /icon.png?f8113231a073f666 200 in 1752ms
+ GET / 200 in 261ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /icon.png in 842ms (705 modules)
+ GET / 200 in 907ms
+ ✓ Compiled (737 modules)
+ GET /icon.png?f8113231a073f666 200 in 2708ms
+ GET /media/preview-home.html 404 in 3348ms
+ ✓ Compiled in 2s (716 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 542ms (705 modules)
+ GET /media/preview-home.html 404 in 122ms
+ ✓ Compiled in 746ms (719 modules)
+ GET /media/preview-home.html 404 in 219ms
+ ○ Compiling /rooms ...
+ ✓ Compiled /rooms in 550ms (706 modules)
+ GET / 200 in 217ms
+ ✓ Compiled /icon.png in 231ms (434 modules)
+ GET /icon.png?f8113231a073f666 200 in 1574ms
+ GET /rooms 200 in 462ms
+ GET / 200 in 471ms
+[?25h

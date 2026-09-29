@@ -41,7 +41,7 @@ export interface Property {
   mapsQuery: string;
   heroImageId: string;
   theme: ThemeName;
-  priceNote: string;
+  priceNote: string | null;
   festivalBanner: FestivalBanner;
   distanceChips: DistanceChip[];
   nearby: Nearby[];

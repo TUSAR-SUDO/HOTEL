@@ -49,28 +49,37 @@ export default function HomePage() {
       {/* ---------- HERO ---------- */}
       <section className="relative">
         <div className="hero-zoom">
-          <PlaceholderMedia
-            media={hero}
-            eager
-            badge={false}
-            className="aspect-[4/5] w-full sm:aspect-[16/10] md:aspect-[21/10]"
-            sizes="100vw"
-          />
+          {/* owner-provided art: portrait crop for phones, wide crop for ≥640px */}
+          <picture>
+            <source
+              media="(min-width: 640px)"
+              srcSet="/media/puri/home-hero.png"
+              width={1578}
+              height={996}
+            />
+            <img
+              src="/media/puri/home-hero-mobile.png"
+              alt="The Jagannath Temple at golden hour beneath a golden ଶ୍ରୀ ରାମ — Shree Ram, Odisha"
+              width={941}
+              height={1672}
+              fetchPriority="high"
+              decoding="async"
+              className="aspect-[9/16] w-full object-cover sm:aspect-[16/10] md:aspect-[21/10]"
+            />
+          </picture>
         </div>
+        {/* the artwork already carries the ଶ୍ରୀ ରାମ wordmark and sunset grade —
+            only a soft bottom scrim for text legibility */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(42,27,20,0.15) 0%, rgba(42,27,20,0.42) 55%, rgba(42,27,20,0.82) 100%)",
+              "linear-gradient(180deg, rgba(42,27,20,0) 35%, rgba(42,27,20,0.38) 68%, rgba(42,27,20,0.78) 100%)",
           }}
-        />
-        {/* giant Odia wordmark, ghosted behind the headline (desktop only) */}
-        <OdiaWordmark
-          className="pointer-events-none absolute right-[4%] top-[10%] hidden text-[16vw] text-ivory/12 sm:block"
         />
         <div className="absolute inset-0 flex items-end [text-shadow:0_1px_10px_rgba(42,27,20,0.85),0_0_3px_rgba(42,27,20,0.5)]">
           <div className="mx-auto w-full max-w-6xl px-4 pb-12 sm:pb-16">
-            <p className="mb-4 text-[15px] font-medium tracking-wide text-marigold">
+            <p className="mb-4 inline-block rounded-full bg-espresso/45 px-4 py-1.5 text-[15px] font-medium tracking-wide text-marigold backdrop-blur-sm">
               Namaskar · <span lang="or" className="font-oriya">ସ୍ବାଗତ</span>
             </p>
             <h1 className="max-w-3xl font-heading text-[40px] font-semibold leading-[1.04] tracking-tight text-ivory sm:text-6xl md:text-[84px]">

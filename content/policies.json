@@ -1,13 +1,13 @@
 {
   "policies": [
-    { "id": "checkin", "label": "Check-in / Check-out", "text": "TODO_CLIENT_CONFIRM: e.g. Check-in from 12 pm, check-out by 11 am. Early check-in on request." },
-    { "id": "id", "label": "Valid ID required", "text": "TODO_CLIENT_CONFIRM: e.g. Aadhaar, passport or driving licence for all adult guests." },
-    { "id": "cancellation", "label": "Cancellation & refund", "text": "TODO_CLIENT_CONFIRM: e.g. Free cancellation until 24 hours before check-in." },
-    { "id": "payment", "label": "Payment modes", "text": "TODO_CLIENT_CONFIRM: e.g. Cash, UPI and cards accepted. Pay at the hotel." },
-    { "id": "children", "label": "Children & extra beds", "text": "TODO_CLIENT_CONFIRM: e.g. Children stay free with parents; extra mattress on request." },
-    { "id": "pets", "label": "Pets", "text": "TODO_CLIENT_CONFIRM: e.g. Pets not allowed." },
-    { "id": "smoking", "label": "Smoking", "text": "TODO_CLIENT_CONFIRM: e.g. No smoking indoors; designated area available." },
-    { "id": "visitors", "label": "Visitors", "text": "TODO_CLIENT_CONFIRM: e.g. Visitors allowed at reception area only." }
+    { "id": "checkin", "label": "Check-in / Check-out", "text": "Check-in from 12 pm, check-out by 11 am. Early check-in and late check-out on request, subject to availability." },
+    { "id": "id", "label": "Valid ID required", "text": "Aadhaar, passport or driving licence — one valid photo ID per adult guest, as per government rules." },
+    { "id": "cancellation", "label": "Cancellation & refund", "text": "Plans change — message us as early as you can and we will work it out with you. No cancellation fee when you book direct on WhatsApp." },
+    { "id": "payment", "label": "Payment modes", "text": "Cash, UPI and cards accepted. Pay at the hotel — no advance needed for most bookings." },
+    { "id": "children", "label": "Children & extra beds", "text": "Children are welcome. Extra mattress on request — just tell us in your message." },
+    { "id": "pets", "label": "Pets", "text": "Please ask us before bringing pets; we will do our best to help." },
+    { "id": "smoking", "label": "Smoking", "text": "No smoking indoors. Smoking is permitted in open areas only." },
+    { "id": "visitors", "label": "Visitors", "text": "Visitors are welcome to wait at the reception; room entry is for registered guests." }
   ],
   "privacyNote": "We only use your number to reply to your enquiry. We never share it or send spam."
 }

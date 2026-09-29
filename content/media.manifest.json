@@ -1,5 +1,7 @@
 {
   "items": [
+    { "id": "home-hero", "property": "brand", "category": "Exterior", "type": "image", "gallery": false, "src": "/media/puri/home-hero.png", "alt": "The Jagannath Temple at golden hour beneath a golden ଶ୍ରୀ ରାମ — Shree Ram, Odisha", "w": 1578, "h": 996 },
+    { "id": "home-hero-mobile", "property": "brand", "category": "Exterior", "type": "image", "gallery": false, "src": "/media/puri/home-hero-mobile.png", "alt": "The Jagannath Temple at golden hour beneath a golden ଶ୍ରୀ ରାମ — Shree Ram, Odisha (mobile crop)", "w": 941, "h": 1672 },
     { "id": "puri-hero", "property": "puri", "category": "Exterior", "type": "image", "gallery": true, "src": "/media/landmarks/jagannath.jpg", "alt": "The Jagannath Temple spire rising over Puri at golden hour", "w": 1600, "h": 1010, "credit": "Wikimedia Commons" },
     { "id": "puri-card", "property": "puri", "category": "Exterior", "type": "image", "gallery": true, "src": "/media/landmarks/puri-beach.jpg", "alt": "Puri sea beach seen from the lighthouse", "w": 1600, "h": 762, "credit": "Wikimedia Commons" },
     { "id": "puri-lobby", "property": "puri", "category": "Common areas", "type": "image", "gallery": true, "src": "/media/landmarks/temple-street.jpg", "alt": "A lane in old Puri near the temple", "w": 1600, "h": 1067, "credit": "Wikimedia Commons" },

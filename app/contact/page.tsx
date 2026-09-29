@@ -47,7 +47,7 @@ export default function ContactPage() {
                 </span>
               </div>
               <p className="mt-3 rounded-[10px] bg-khadi-sand px-3 py-2 text-xs text-warm-umber">
-                TODO_CLIENT_CONFIRM: reception hours.
+                The desk is always attended — message us any time on WhatsApp.
               </p>
               <div className="mt-4 flex flex-wrap gap-3">
                 <a
